@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONVERTOR</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+    <div class="header">
+
+    </div>
+    <div class="body">
+<h2>Temperature Converter</h2>
+<p>Type a value in the Celsius field to convert the value to Fahrenheit:</p>
+
+<p>
+  <label>Celsius</label>
+  <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverterf(this.value)" onchange="temperatureConverterf(this.value)">
+</p>
+<p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+
+
+
+<p>Type a value in the Celsius field to convert the value to Fahrenheit:</p>
+
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverterc(this.value)" onchange="temperatureConverterc(this.value)">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
+
+
+
+    </div>
+    <div class="footer">
+
+    </div>
+    <script>
+        function temperatureConverterc(valNum) {
+          valNum = parseFloat(valNum);
+          document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+        }
+        </script>
+    <script>
+        function temperatureConverterf(valNum) {
+          valNum = parseFloat(valNum);
+          document.getElementById("outputFahrenheit").innerHTML=(valNum*1.8)+32;
+        }
+        </script>
+</body>
+</html>
