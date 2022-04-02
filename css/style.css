@@ -22,3 +22,9 @@
 body{
     background-image: linear-gradient(to left, rgb(197, 93, 93),rgb(156, 14, 14),rgb(141, 202, 141));
 } 
+#outputFahrenheit{
+    color: rgb(223, 35, 35);
+}
+#outputCelcius{
+    color: rgb(47, 173, 182);
+}
