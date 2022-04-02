@@ -13,10 +13,3 @@
 body{
     background-image: linear-gradient(to left, rgb(197, 93, 93),rgb(156, 14, 14),rgb(141, 202, 141));
 } 
-@media only screen and (max-width: 600px){
-    .body{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-        text-shadow: 1px 1px rgb(233, 81, 81),1px 1px rgb(228, 228, 70);
-    }
-  }
